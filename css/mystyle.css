@@ -3,21 +3,11 @@ ul {
   margin: 0;
   padding: 0;
   overflow: visible;  
-  /* 드롭다운메뉴가 확장될 때 메뉴 공간이 부족하여 오버플로우 발생
-     overflow: visible; 은 오버클로우되는 콘텐츠를 잘라내지 않고 
-     영역 범위 밖까지 콘텐츠를 출력함
-     overflow: hidden은 오버클로우되는 콘텐츠를 잘라냄. */
+ 
   background-color: #333;
   position: sticky;
   top:0px;
-  /* position: sticky는 미리 정의한 위치에 도달하기 전에는 
-               다른 요소와 함께 스크롤 됨
-     위치를 정의하기 위해 left, right, top, bottom 속성 사용
-     top:0px; 은 화면(뷰포트)의 상단 0px 위치를 지정
-     ul 요소는 뷰포트의 상단 0px 위치에 도달하면 sticky가 됨. 
-     sticky는 화면에 마치 붙여놓은 것처럼 위치가 고정되는 것을 의미  
-     스크롤 할 때 다른 요소는 함께 스크롤되지만 
-     ul요소는 상단 0px 위치에 고정되어 움직이지 않음.  */
+  
 }
 
 li {
@@ -43,13 +33,13 @@ li a, .dropbtn {
      하지만 display: block 요소처럼 줄바꿈은 발생하지 않음.   
   */
   padding: 14px 16px;
-  color: white;
+  color: rgb(255, 255, 255);
   text-align: center;
   text-decoration: none;
 }
 
 li a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+  background-color: rgb(14, 120, 161);
 }
 /*     
 li.dropdown {
@@ -116,4 +106,9 @@ li.dropdown {
 
 .dropdown:hover .dropdown-content {
   display: block; /* 마우스 오버시 드롭다운 메뉴가 보이도록 설정 */
+}
+
+img{
+  margin-left:auto;
+  margin-right: auto;
 }
